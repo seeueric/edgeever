@@ -35,7 +35,6 @@ import {
   ImageGallery,
   getResourceIdFromUrl,
   diagramDocumentToX6Cells,
-  attachDiagramReader,
   type AiAction,
   type AiPromptParameterKind,
   type AiPromptResultMode,
@@ -488,23 +487,25 @@ const ReadOnlyX6Diagram = ({
       grid: false,
       interacting: false,
       panning: { enabled: true },
-      mousewheel: { enabled: true, minScale: 0.1, maxScale: 2.5 },
+      mousewheel: { enabled: true, minScale: 0.35, maxScale: 2 },
     });
     graph.addNodes(cells.nodes);
     graph.addEdges(cells.edges);
 
-    const reader = attachDiagramReader(graph, container, { ...diagram, nodes: diagram.nodes.map((node, index) => ({ ...node, width: cells.nodes[index].width, height: cells.nodes[index].height })) }, locale, theme === "dark");
-    const fit = () => reader.resize(measureWidth(), Math.max(1, container.clientHeight));
+    const fit = () => {
+      graph.resize(measureWidth(), Math.max(1, container.clientHeight));
+      graph.zoomToFit({ maxScale: 1.05, padding: 28 });
+      graph.centerContent();
+    };
     const frame = window.requestAnimationFrame(fit);
     const observer = new ResizeObserver(fit);
     observer.observe(parent ?? container);
     return () => {
       window.cancelAnimationFrame(frame);
       observer.disconnect();
-      reader.dispose();
       graph.dispose();
     };
-  }, [diagram, theme, locale]);
+  }, [diagram, theme]);
 
   const title = locale === "en-US"
     ? diagram.kind === "mind-map" ? "Mind map" : diagram.kind === "architecture" ? "Architecture diagram" : "Flowchart"

@@ -11,17 +11,10 @@ describe("system information access", () => {
     );
   });
 
-  test("does not duplicate the entry in desktop settings", () => {
+  test("keeps an entry in the desktop settings layout", () => {
     const desktopSettings = settingsPaneSource.match(/桌面端布局：双栏[\s\S]*?移动端布局/)?.[0];
 
-    expect(desktopSettings).not.toContain("setSystemInfoOpen(true)");
-    expect(desktopSettings).not.toContain('t("systemInfo.title")');
-  });
-
-  test("keeps the entry in mobile settings", () => {
-    const mobileSettings = settingsPaneSource.match(/移动端布局[\s\S]*?<SystemInfoDialog/)?.[0];
-
-    expect(mobileSettings).toContain("setSystemInfoOpen(true)");
-    expect(mobileSettings).toContain('t("systemInfo.title")');
+    expect(desktopSettings).toContain("setSystemInfoOpen(true)");
+    expect(desktopSettings).toContain('t("systemInfo.title")');
   });
 });

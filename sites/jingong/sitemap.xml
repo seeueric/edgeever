@@ -13,24 +13,24 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/"/>
   </url>
   <url>
-    <loc>https://www.example.com/about.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/about.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/about.html"/>
+    <loc>https://www.example.com/products.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/products.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/products.html"/>
   </url>
   <url>
-    <loc>https://www.example.com/en/about.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/about.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/about.html"/>
+    <loc>https://www.example.com/en/products.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/products.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/products.html"/>
   </url>
   <url>
-    <loc>https://www.example.com/business.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/business.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/business.html"/>
+    <loc>https://www.example.com/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/services.html"/>
   </url>
   <url>
-    <loc>https://www.example.com/en/business.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/business.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/business.html"/>
+    <loc>https://www.example.com/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/services.html"/>
   </url>
   <url>
     <loc>https://www.example.com/projects.html</loc>
@@ -41,6 +41,16 @@
     <loc>https://www.example.com/en/projects.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/projects.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/projects.html"/>
+  </url>
+  <url>
+    <loc>https://www.example.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/about.html"/>
+  </url>
+  <url>
+    <loc>https://www.example.com/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/about.html"/>
   </url>
   <url>
     <loc>https://www.example.com/news.html</loc>
@@ -61,5 +71,45 @@
     <loc>https://www.example.com/en/contact.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/contact.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/contact.html"/>
+  </url>
+  <url>
+    <loc>https://www.example.com/product-steel.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/product-steel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/product-steel.html"/>
+  </url>
+  <url>
+    <loc>https://www.example.com/en/product-steel.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/product-steel.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/product-steel.html"/>
+  </url>
+  <url>
+    <loc>https://www.example.com/product-modular.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/product-modular.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/product-modular.html"/>
+  </url>
+  <url>
+    <loc>https://www.example.com/en/product-modular.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/product-modular.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/product-modular.html"/>
+  </url>
+  <url>
+    <loc>https://www.example.com/product-envelope.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/product-envelope.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/product-envelope.html"/>
+  </url>
+  <url>
+    <loc>https://www.example.com/en/product-envelope.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/product-envelope.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/product-envelope.html"/>
+  </url>
+  <url>
+    <loc>https://www.example.com/product-bipv.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/product-bipv.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/product-bipv.html"/>
+  </url>
+  <url>
+    <loc>https://www.example.com/en/product-bipv.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://www.example.com/product-bipv.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.example.com/en/product-bipv.html"/>
   </url>
 </urlset>

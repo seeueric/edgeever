@@ -596,6 +596,84 @@ table.spec td:first-child { color: var(--ink); }
 .post p { margin-top: 10px; font-size: 14.5px; line-height: 1.8; color: var(--text-2); max-width: 68ch; }
 
 /* --------------------------------------------------------------------------
+   11b. 技术资料下载（制造商站的核心组件）
+   -------------------------------------------------------------------------- */
+.files { border-top: 1px solid var(--rule); }
+.files li { border-bottom: 1px solid var(--rule); }
+.files a, .files span.row-x {
+  display: grid; gap: 6px 16px;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "n n" "t s";
+  align-items: baseline; padding-block: 16px;
+  transition: background .25s var(--ease);
+}
+@media (min-width: 700px) {
+  .files a, .files span.row-x {
+    grid-template-columns: 1fr 140px 90px;
+    grid-template-areas: "n t s";
+    gap: 4px 24px; padding-block: 17px;
+  }
+}
+.files a:hover { background: var(--paper-2); }
+.files b { grid-area: n; font-weight: 500; font-size: 15.5px; color: var(--ink); }
+.files em {
+  grid-area: t; font-style: normal; font-family: var(--mono); font-size: 11.5px;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+}
+.files i {
+  grid-area: s; font-style: normal; font-family: var(--mono); font-size: 11.5px;
+  letter-spacing: .06em; color: var(--muted); justify-self: start;
+}
+@media (min-width: 700px) { .files i { justify-self: end; } }
+.files [aria-disabled="true"] { cursor: default; }
+.files [aria-disabled="true"] b { color: var(--text-2); }
+.files [aria-disabled="true"] i { color: var(--accent); }
+
+/* 产品页小节编号 */
+.pnum {
+  display: flex; align-items: baseline; gap: 18px;
+  padding-bottom: 18px; margin-bottom: 30px;
+  border-bottom: 1px solid var(--ink);
+}
+.pnum span {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--muted); flex: none;
+}
+.pnum h2 { font-size: clamp(19px, 1.9vw, 24px); letter-spacing: -.02em; }
+
+/* 产品索引卡 */
+.pcards { display: grid; gap: clamp(32px, 4vw, 48px) 28px; grid-template-columns: 1fr; }
+@media (min-width: 800px) { .pcards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.pcard { display: block; }
+.pcard__t { margin-top: 20px; font-size: clamp(20px, 2vw, 26px); letter-spacing: -.025em; }
+.pcard__d { margin-top: 12px; font-size: 15px; line-height: 1.8; color: var(--text-2); }
+.pcard__k {
+  display: grid; gap: 0; margin-top: 18px; border-top: 1px solid var(--rule);
+}
+.pcard__k div {
+  display: grid; grid-template-columns: 140px 1fr; gap: 16px;
+  padding-block: 10px; border-bottom: 1px solid var(--rule);
+  font-size: 13.5px; color: var(--text-2);
+}
+.pcard__k dt { color: var(--muted); }
+.pcard__k dd { margin: 0; }
+.pcard:hover .pcard__t { color: var(--accent); }
+.pcard__go { margin-top: 20px; }
+
+/* 合规标准条 */
+.stds { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.stds li {
+  display: grid; gap: 4px 24px; grid-template-columns: 1fr;
+  padding-block: 14px; border-bottom: 1px solid var(--rule);
+  font-size: 14.5px; line-height: 1.75; color: var(--text-2);
+}
+@media (min-width: 700px) { .stds li { grid-template-columns: 220px 1fr; } }
+.stds code {
+  font-family: var(--mono); font-size: 12.5px; letter-spacing: .02em;
+  color: var(--ink); font-style: normal;
+}
+
+/* --------------------------------------------------------------------------
    12. 行业 / CTA
    -------------------------------------------------------------------------- */
 .inds { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }

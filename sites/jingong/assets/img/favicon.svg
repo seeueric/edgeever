@@ -1,17 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="精工">
-  <defs>
-    <linearGradient id="jgMark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0a56a0"/>
-      <stop offset="1" stop-color="#0b2337"/>
-    </linearGradient>
-  </defs>
-  <rect width="48" height="48" rx="5" fill="url(#jgMark)"/>
-  <g fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="square">
-    <path d="M11 37V19.5L24 11l13 8.5V37"/>
-    <path d="M11 19.5h26"/>
-  </g>
-  <g fill="none" stroke="#f0651c" stroke-width="2.2" stroke-linecap="square">
-    <path d="M17 37V26h14v11"/>
-  </g>
-  <rect x="11" y="37" width="26" height="2.4" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Jingong" fill="none">
+  <rect width="32" height="32" fill="#f6f4f1"/>
+  <rect x="1" y="1" width="30" height="30" stroke="#15171a" stroke-width="1.4"/>
+  <path d="M7 24V13.5L16 8l9 5.5V24" stroke="#15171a" stroke-width="1.6"/>
+  <path d="M7 13.5h18" stroke="#15171a" stroke-width="1.1" opacity=".55"/>
+  <path d="M11.5 24v-6h9v6" stroke="#b23a1b" stroke-width="1.6"/>
 </svg>

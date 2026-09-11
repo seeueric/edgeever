@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# TODO: 上线前把域名替换为公司实际域名
+# TODO 上线前替换为公司实际域名
 Sitemap: https://www.example.com/sitemap.xml
